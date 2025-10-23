@@ -1,29 +1,4 @@
 
-// // src/navigation/AuthStack.tsx
-// import React from 'react';
-// import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-
-// import LoginOrRegisterScreen from './src/screens/LoginOrRegisterScreen';
-// import EnterOTPScreen from './screens/EnterOTPScreen';
-
-
-
-// const Stack = createNativeStackNavigator();
-
-// const AuthStack = () => {
-//   return (
-//     <Stack.Navigator screenOptions={{ headerShown: false }}>
-//       {/* 🔸 User Auth Flow */}
-
-
-//       <Stack.Screen name="LoginOrRegister" component={LoginOrRegisterScreen} />
-//       <Stack.Screen name="EnterOtpScreen" component={EnterOTPScreen} />
-
-
-//     </Stack.Navigator>
-//   );
-// };
 
 
 import React from 'react';
@@ -53,6 +28,9 @@ import VideoPlayerScreen from '../screens/VideoPlayerScreen';
 import CreatePlaylistScreen from '../screens/CreatePlaylistScreen';
 import PlaylistDetailScreen from '../screens/PlaylistDetailScreen';
 import AddSongToPlaylistScreen from '../screens/AddSongToPlaylistScreen';
+import HelpSupportScreen from '../screens/HelpSupportScreen';
+import PrivacyPolicyScreen from '../screens/PrivacyPolicyScreen';
+import TermsOfServiceScreen from '../screens/TermOfServiceScreen';
 
 
 
@@ -83,6 +61,9 @@ const AuthStack = () => {
       <Stack.Screen name="CreatePlaylistScreen" component={CreatePlaylistScreen} />
       <Stack.Screen name="PlaylistDetailScreen" component={PlaylistDetailScreen} />
       <Stack.Screen name="AddSongToPlaylistScreen" component={AddSongToPlaylistScreen} />
+      <Stack.Screen name="HelpSupportScreen" component={HelpSupportScreen} />
+<Stack.Screen name="PrivacyPolicyScreen" component={PrivacyPolicyScreen} />
+<Stack.Screen name="TermsOfServiceScreen" component={TermsOfServiceScreen} />
 
 
 
@@ -117,9 +98,13 @@ export const AuthStackLogin = () => {
       <Stack.Screen name="CreatePlaylistScreen" component={CreatePlaylistScreen} />
       <Stack.Screen name="PlaylistDetailScreen" component={PlaylistDetailScreen} />
       <Stack.Screen name="AddSongToPlaylistScreen" component={AddSongToPlaylistScreen} />
+        <Stack.Screen name="HelpSupportScreen" component={HelpSupportScreen} />
+<Stack.Screen name="PrivacyPolicyScreen" component={PrivacyPolicyScreen} />
+<Stack.Screen name="TermsOfServiceScreen" component={TermsOfServiceScreen} />
 
 
 
     </Stack.Navigator>
   );
 };
+ 
